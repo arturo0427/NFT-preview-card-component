@@ -1,0 +1,110 @@
+:root {
+  /* Primary */
+  --Softblue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+  /* Neutral */
+  --Verydarkblue_mainBG: hsl(217, 54%, 11%);
+  --Verydarkblue_cardBG: hsl(216, 50%, 16%);
+  --Verydarkblue_line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+body {
+  background-color: var(--Verydarkblue_mainBG);
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+.card {
+  /* margin: 50px 25px; */
+  height: 490px;
+  width: 285px;
+  padding: 20px;
+  background-color: var(--Verydarkblue_cardBG);
+  overflow: hidden;
+  border-radius: 17px;
+  box-shadow: 10px 15px 50px -3px rgb(0, 0, 0);
+}
+
+.card-img {
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  border-radius: 13px;
+}
+
+.card-title {
+  margin: 15px 0;
+  color: var(--White);
+  font-weight: 600;
+  font-size: 21px;
+}
+.card-text {
+  color: var(--Softblue);
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  font-weight: 400;
+  border-bottom: solid 1px var(--Verydarkblue_line);
+  padding-bottom: 15px;
+  font-size: 15px;
+}
+
+.card-info img {
+  margin-right: 6px;
+}
+.info-text {
+  display: flex;
+  align-items: center;
+}
+
+.info-text-eth {
+  color: var(--Cyan);
+}
+
+.info-text-days {
+  color: var(--Softblue);
+}
+
+.card-user {
+  display: flex;
+  align-items: center;
+  color: var(--Softblue);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.card-user img {
+  width: 30px;
+  border: solid 2px white;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.card-user span {
+  color: var(--White);
+  margin-left: 5px;
+}
+
+.attribution {
+  color: white;
+  margin-top: 50px;
+}
